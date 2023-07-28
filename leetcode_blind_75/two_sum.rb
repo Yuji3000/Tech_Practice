@@ -16,9 +16,11 @@
 
 #Find the two elements in the array that equal the target
 #only two elements will fulfil this, cannot use same element twice
-
+# nums.find_index(num)
 def two_sum(nums, target)
+  hash = {}
   nums.each do |num|
+    require 'pry'; binding.pry
     
   end
 end

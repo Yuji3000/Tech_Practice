@@ -9,4 +9,6 @@ def tally(array)
   array.tally
 end
 
-p tally(array)
+# p tally(array)
+
+
