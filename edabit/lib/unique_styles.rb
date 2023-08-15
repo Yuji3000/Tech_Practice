@@ -22,15 +22,14 @@
 # ]) ➞ 7
 
 def unique_styles(albums)
-	a = albums.map do |style|
-    style.split(",")
+	array_of_styles = albums.map do |style|
+    style.split(",").map do |element|
+      element.downcase
+    end
   end
-  # Added downcasing each "style" just incase of multiple inputs with/without up/downcase
+  # Added downcasing each "element" just incase of multiple inputs with/without up/downcase
   # e.g. "DUB", "dub", "Dub"
-  downcase_array = a.flatten.map do |style|
-    style.downcase
-  end
-  downcase_array.uniq.count
+  array_of_styles.flatten.uniq.count
 end	
 
 albums = [
