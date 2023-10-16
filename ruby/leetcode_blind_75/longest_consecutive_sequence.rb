@@ -8,6 +8,8 @@
 
 def longest_consecutive(nums)
     # require 'pry'; binding.pry
+    # longest = 0
+
 end
 
 
