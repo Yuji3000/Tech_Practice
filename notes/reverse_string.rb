@@ -8,11 +8,9 @@
 
 input = "Madam, I'm Adam"
 # def reverse_string(input)
-#   if input.class == String
-#     split_string = input.split(//)
-#     reversed_array = split_string.reverse_each.map { |element| element }
-#     return reversed_array.join
-#   end
+  # split_string = input.split(//)
+  # reversed_array = split_string.reverse_each.map { |element| element }
+  # return reversed_array.join
 # end
 
 # string = "Input must be a string"
@@ -33,6 +31,12 @@ input = "Madam, I'm Adam"
 #   #   # reversed << split_array[index]
 #   # end
 # end
+
+def reverse(string)
+  reverse_string = ""
+  string.each_char { |char| reverse_string.prepend(char) }
+  reverse_string
+end
 
 def reverse_string(input)
   split_array = input.split(//)
