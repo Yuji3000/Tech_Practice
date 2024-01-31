@@ -21,10 +21,18 @@
 
 
 def max_profit(prices)
+  low_price = nil
+  high_price = 0
 
+  prices.each do |int|
+    low_price = int if low_price == nil || int < low_price
+    high_price = int if int > low_price && int > high_price
+  end
+  high_price == 0 ? 0 : high_price - low_price
 end
 
-prices = [7,1,5,3,6,4]
+prices = [7,6,4,3,1]
+# prices = [7,1,5,3,6,4]
 # Output: 5
 
 p max_profit(prices)
